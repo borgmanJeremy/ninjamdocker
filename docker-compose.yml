@@ -1,0 +1,10 @@
+version: "3"
+services:
+  ninjam:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./config.cfg:/app/config.cfg
+    ports:
+      - 5578:2049
